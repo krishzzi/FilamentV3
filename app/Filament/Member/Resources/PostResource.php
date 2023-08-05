@@ -26,7 +26,8 @@ class PostResource extends Resource
 
 
     // here afterStateUpdated working fine with live
-    public  function form(Form $form): Form
+    // but when use form from create page or other pages..not working
+    public static  function form(Form $form): Form
     {
         return $form
             ->schema([
